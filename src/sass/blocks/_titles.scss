@@ -1,0 +1,127 @@
+.title {
+  font-size: calc(1rem + 1.1vw);
+  line-height: 50px;
+  color: white;
+  font-weight: 600;
+  &__full {
+    font-size: calc(1rem + 1.3vw);
+    position: absolute;
+    top: 160px;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    padding: 0 20px 0 100px;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    &._active {
+      transform: translate(0px, 0px);
+
+      opacity: 1;
+    }
+  }
+  &__about {
+    background: $back-color;
+    margin-bottom: 0;
+    padding: 1px 100px 1px 30px;
+    font-size: 21px;
+
+    color: #fff;
+    &-cont {
+      background: $logo-color;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    font-size: calc(1rem + 1.3vw);
+    top: 130px;
+    left: 0;
+    padding: 0 80px 0 100px;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    &._active {
+      transform: translate(0px, 0px);
+
+      opacity: 1;
+    }
+  }
+  &__tab {
+    color: $back-color;
+    text-align: center;
+    line-height: 40px;
+    padding-top: 80px;
+  }
+  &__leasing {
+    position: absolute;
+    font-size: calc(1rem + 1.3vw);
+    top: 140px;
+    left: 0;
+    padding: 0 80px 0 100px;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    &._active {
+      transform: translate(0px, 0px);
+
+      opacity: 1;
+    }
+  }
+  &__form {
+    color: $text-color;
+    text-align: center;
+    line-height: 40px;
+    padding-top: 120px;
+  }
+}
+
+.subtitle {
+  font-size: calc(1rem + 1vw);
+
+  line-height: 32px;
+  color: #fff;
+  font-weight: 400;
+  &__full {
+    position: relative;
+    top: 40px;
+    padding: 0 20px 0 100px;
+    margin-bottom: 30px;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    &._active {
+      transform: translate(0px, 0px);
+      transition: all 0.8s ease 0.4s;
+
+      opacity: 1;
+    }
+  }
+  &__background {
+    position: absolute;
+    padding: 0 80px 0 100px;
+    top: 300px;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    &._active {
+      transform: translate(0px, 0px);
+      transition: all 0.8s ease 0.4s;
+
+      opacity: 1;
+    }
+  }
+  &__leasing {
+    position: absolute;
+    padding: 0 80px 0 100px;
+    top: 300px;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    &._active {
+      transform: translate(0px, 0px);
+      transition: all 0.8s ease 0.4s;
+
+      opacity: 1;
+    }
+  }
+}

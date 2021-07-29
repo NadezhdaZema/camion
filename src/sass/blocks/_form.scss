@@ -1,0 +1,149 @@
+.form {
+  &__wrapper {
+    background: #fff;
+    padding: 60px 50px 10px 50px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    color: $text-color;
+    font-size: 16px;
+    line-height: 27px;
+    p {
+      margin-bottom: 20px;
+    }
+    span {
+      display: block;
+
+      font-weight: 600;
+      max-width: 86%;
+
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    hr {
+      max-width: 100px;
+      margin: 0px 0 20px 0;
+    }
+  }
+  &__text {
+    max-width: 46%;
+    @include box-shadow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    @include hs;
+    transition: all 0.8s ease 0s;
+
+    a {
+      font-weight: 600;
+      color: $logo-color;
+      transition: all ease 0.4s;
+      &:hover {
+        color: $text-color;
+      }
+    }
+
+    li {
+      display: block;
+      max-width: 700px;
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 30px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 24%;
+        left: 3px;
+        width: 12px;
+        height: 2px;
+        background: $logo-color;
+      }
+    }
+  }
+  &__raw {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  &__head {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px 50px 50px;
+
+    &-block {
+      @include box-shadow;
+      @include hs;
+      transition: all 0.8s ease 0s;
+    }
+
+    &_raw {
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      padding: 0 30px 30px 30px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    max-width: 110px;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__table {
+    padding: 30px;
+
+    margin-top: 19px;
+    display: grid;
+    grid-template: 53px 212px 43px / repeat(2, 210px);
+    justify-content: space-between;
+    row-gap: 30px;
+    label {
+      display: block;
+      position: absolute;
+      top: -9px;
+      left: 12px;
+      height: 18px;
+      padding: 0 8px;
+      background-color: #fff;
+      font-size: 13px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.fa {
+  color: $logo-color;
+  font-size: 30px;
+  text-align: center;
+}
+
+.form__form {
+  width: 46%;
+  @include box-shadow;
+  transition: all 0.8s ease 0s;
+  @include hs;
+}
+
+.checkbox {
+  font-size: 13px;
+  line-height: 5px;
+  padding: 5px 20px 20px 33px;
+  &__form {
+    padding: 14px 58px;
+  }
+}

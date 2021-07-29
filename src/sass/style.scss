@@ -1,0 +1,42 @@
+@import "libs/bootstrap-reboot.min";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+@import "base/mixins";
+@import "base/variables";
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  background-color: rgb(248, 247, 247);
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+hr {
+  margin: 0 auto;
+  max-width: 148px;
+  border: 1px $logo-color solid;
+  background-color: $logo-color;
+}
+
+@import "blocks/header";
+@import "blocks/fullscreen";
+@import "blocks/titles";
+@import "blocks/button";
+@import "blocks/about";
+@import "blocks/background";
+@import "blocks/tab";
+@import "blocks/popups";
+@import "blocks/leasing";
+@import "blocks/contacts";
+@import "blocks/form";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "base/normalize";

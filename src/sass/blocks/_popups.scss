@@ -1,0 +1,161 @@
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+
+  top: 0;
+  left: 0;
+  z-index: 33;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+  position: fixed;
+
+  background-color: rgba(0, 0, 0, 0.8);
+
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+  }
+  &__content {
+    background-color: white;
+    color: black;
+    max-width: 1440px;
+    padding: 30px;
+    position: relative;
+  }
+  &__title {
+    font-size: 25px;
+    margin-bottom: 1em;
+    font-weight: 600;
+  }
+  &__close {
+    position: absolute;
+    right: 31px;
+    top: 24px;
+    font-size: 20px;
+
+    text-decoration: none;
+    .fa {
+      color: rgb(241, 42, 42);
+      transition: all 0.5s ease;
+      font-size: 37px;
+      &:hover {
+        color: rgb(160, 4, 4);
+      }
+    }
+  }
+  &__area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__image {
+    max-width: 700px;
+    transition: all 0.8s ease 0s;
+    @include box-shadow;
+    &:hover {
+      transform: scale(1.04);
+      box-shadow: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+  &__block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+  &__desc {
+    float: right;
+    padding-top: 150px;
+    width: 47%;
+    padding: 67px 30px 0 30px;
+    margin-left: 43px;
+    font-size: 15px;
+    color: $text-color;
+    @include box-shadow;
+    @include hs;
+    @include trans;
+    p {
+      margin-bottom: 25px;
+      line-height: 20px;
+    }
+  }
+  &__title {
+    color: $text-color;
+  }
+}
+
+.popup__table {
+  max-width: 40%;
+  padding: 0 20px;
+  &-title {
+    text-align: center;
+    color: $text-color;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+}
+tr,
+td {
+  border: 1px solid $logo-color;
+  padding: 10px;
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup.open .popup__content {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+}
+
+.popup__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
